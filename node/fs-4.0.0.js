@@ -7,7 +7,7 @@ const SlowBuffer = require('buffer').SlowBuffer;
 const util = require('util');
 const pathModule = require('path');
 
-const binding = process.binding('fs');
+let binding = process.binding('fs');
 const constants = require('constants');
 const fs = exports;
 const Buffer = require('buffer').Buffer;
